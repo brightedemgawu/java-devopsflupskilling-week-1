@@ -10,12 +10,12 @@ pipeline{
             }
         }
         
-        stage("fecthing"){
-            steps{
-                git branch: 'master', url: 'https://github.com/brightedemgawu/java-devopsflupskilling-week-1.git'
-                bat "dir /B"
-            }
-        }
+//         stage("fecthing"){
+//             steps{
+//                 git branch: 'master', url: 'https://github.com/brightedemgawu/java-devopsflupskilling-week-1.git'
+//                 bat "dir /B"
+//             }
+//         }
         stage("build"){
             steps{
                 bat "mvnw clean package"
